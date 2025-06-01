@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+
+  <div class="options">
+    <label>Play Mode:
+      <select id="modeSelect">
+        <option value="ai">Against AI</option>
+        <option value="friend">With Friend</option>
+      </select>
+    </label>
+
+    <label>Match Series:
+      <select id="matchSelect">
+        <option value="5">Best of 5</option>
+        <option value="10">Best of 10</option>
+        <option value="15">Best of 15</option>
+        <option value="20">Best of 20</option>
+      </select>
+    </label>
+
+    <button id="startGame">Start Game</button>
+  </div>
+
+  <div class="scoreboard">
+    <span>Player X: <span id="scoreX">0</span></span>
+    <span>Player O: <span id="scoreO">0</span></span>
+  </div>
+
+  <div class="board-wrapper">
+    <div class="board" id="board"></div>
+    <div id="win-line"></div>
+  </div>
+
+  <div id="status">Choose game settings to start</div>
+  <button id="resetBtn">Restart Round</button>
+
+  <audio id="soundMove" src="sounds/move.mp3"></audio>
+  <audio id="soundWin" src="sounds/win.mp3"></audio>
+  <audio id="soundDraw" src="sounds/draw.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
