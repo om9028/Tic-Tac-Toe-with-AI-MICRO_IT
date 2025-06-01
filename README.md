@@ -22,17 +22,5 @@
 
 Do **not** share `my-release-key.jks` if publishing this app. Keep it private to maintain control over updates and security.
 
-## 🛠 How to Use
-
-1. Open the project in Android Studio.
-2. Replace the default URL in the WebView.
-3. Build your APK or AAB.
-4. Install on a device or publish to Play Store.
-
-## 📃 License
-
-See `license.txt` for license details.
-
----
 
 Made with ❤️ by [Light]
